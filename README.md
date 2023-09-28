@@ -8,7 +8,7 @@ The test has to be reliable and the conditions of execution similar between test
 Using a `docker-compose.yml` with fixed CPU and memory seems a good idea the achieved that.
 
 - `docker-compose.yml` to build and run the API using the same amount of **CPU** and **RAM** between each tests
-- `Dockfile` build an optimized **JVM** using **jdeps/jlink** with **JAVA_OPTS** specific for containers
+- `Dockerfile` build an optimized **JVM** using **jdeps/jlink** with **JAVA_OPTS** specific for containers
 - `experimental.virtual-threads` set to **true|false**
 - `BenchController` will simulate our endpoint load, allocating some memory and doing some random pause.
 - `bench.sh` will spam the API using `wrk` tool and give us the results
@@ -77,5 +77,3 @@ Transfer/sec:    146.25KB
 Requests/sec:    104.88
 Transfer/sec:     14.65KB
 ```
-## Conclusion
-
