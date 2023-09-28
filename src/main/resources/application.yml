@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: creativeyann17-jdk21bench
+  main:
+    lazy-initialization: true
+bench:
+  virtual-threads: true
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.creativeyann17: INFO
